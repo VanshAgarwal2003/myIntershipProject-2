@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+    display: grid;
+}
+
+.form .heading h1 {
+    text-align: center;
+    margin-top: 0.5em;
+    letter-spacing: 6px;
+    color: white;
+    font-size: 2.5em;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.form::before {
+    content: "";
+    background: url("../images/luca-bravo-9l_326FISzk-unsplash.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.15;
+}
+.form {
+    height: 67vh;
+    border-radius: 15px;
+    width: 34vw;
+    background-color: transparent;
+    border: 3px solid white;
+}
+.form-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -1.5em;
+}
+.form-section div{
+    margin: 35px 0px;
+}
+.form-section input{
+    display: block;
+    margin: auto;
+    width:22em;
+    height: 2em;
+    background-color: transparent;
+    color: white;
+    letter-spacing: 1px;
+    cursor: initial;
+    border: 0;
+    font-weight: bold;
+    font-size: 0.9em;
+    outline: none;
+    border-bottom: 2px solid white;
+    font-family: 'Amaranth', sans-serif;
+}
+.form-section label{
+    position: relative;
+    top: 1.5em;
+    left: 20em;
+    color: white;
+}
+.btn input{
+   border: 2px solid rgba(0, 0, 0, 0.522);
+   background-color: #237fb7;
+   color: white;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   width:15em;
+   border-radius: 8px;
+   height: 35px;
+   margin-top: 3.5em;
+   margin-left: 3.2em;
+}
+.btn input:hover{
+    background-color: #237eb7e1;
+}

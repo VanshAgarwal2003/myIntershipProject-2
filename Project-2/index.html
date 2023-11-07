@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Bungee&display=swap" rel="stylesheet">
+    <style>
+       @media screen and (min-width: 1111px) and (max-width: 1260px) {
+        .form{
+           height:58%;
+           width:39vw;
+        }
+        .form-section input{
+            height: 2.65em;
+            width: 20em;
+        }
+        .form-section label{
+            position: relative;
+            top: 2.3em;
+            left:18.5em;
+        }
+        .btn input{
+            width:18em;
+            height: 29px;
+            margin-top: 0.2em;
+            margin-left: 1em;
+         }
+      }
+      @media screen and (min-width: 1074px) and (max-width: 1111px) {
+        .form{
+           height:57%;
+           width:39vw;
+        }
+        .form-section input{
+            height: 2.5em;
+            width:20em;
+        }
+        .form-section label{
+            position: relative;
+            top: 2.3em;
+            left:-2em;
+        }
+        .btn input{
+            width:18em;
+            height: 29px;
+            margin-top: 2.5em;
+            margin-left: 1.2em;
+         }
+
+      }
+      @media screen and (min-width: 910px) and (max-width: 1074px) {
+        .form{
+           height:58%;
+           width:39vw;
+        }
+        .form-section input{
+            width: 15em;
+            height: 1.5em;
+            position: relative;
+            right: 0.2em;
+            margin-top: 0.1em;
+        }
+        .form-section label{
+            position: relative;
+            top: 2.3em;
+            left:-2em;
+        }
+        .btn input{
+            width:11em;
+            height: 29px;
+            margin-top: -0.5em;
+            margin-left: 2.2em;
+         }
+         .form .heading h1{
+            font-size: 2.5em;
+         }
+      }
+
+      @media screen and (min-width: 795px) and (max-width: 910px) {
+        .form{
+           height:56%;
+           width:44vw;
+        }
+        .form-section input{
+            width: 15em;
+            height: 1.5em;
+            position: relative;
+            right: 0.2em;
+            margin-top: 1.1em;
+        }
+        .form-section label{
+            position: relative;
+            top: 2.3em;
+            left:-1.9em;
+        }
+        .btn input{
+            width:12em;
+            height: 29px;
+            margin-top: -1em;
+            margin-left: 1.5em;
+         }
+         .form .heading h1{
+            font-size: 2em;
+            margin-top: 1em;
+         }
+      }
+      @media screen and (min-width: 673px) and (max-width: 795px) {
+        .form{
+           height:65%;
+           width:51vw;
+        }
+        .form-section input{
+            width: 12em;
+            height: 1.5em;
+            position: relative;
+            right: 0.2em;
+            margin-top: 1.1em;
+        }
+        .form-section label{
+            position: relative;
+            top: 2.3em;
+            left:-1.75em;
+        }
+        .btn input{
+            width:11em;
+            height: 29px;
+            margin-top: 0.5em;
+            margin-left: 0.5em;
+         }
+         .form .heading h1{
+            font-size: 1.8em;
+            margin-top: 1em;
+         }
+      }
+      @media screen and (min-width: 560px) and (max-width: 673px) {
+        .form{
+           height:55%;
+           width:63vw;
+        }
+        .form-section input{
+            width: 14em;
+            height: 1.5em;
+            position: relative;
+            right: 0.2em;
+            margin-top: 1.1em;
+        }
+        .form-section label{
+            position: relative;
+            top: 2.3em;
+            left:-1.75em;
+        }
+        .btn input{
+            width:11em;
+            height: 29px;
+            margin-top: 2.5em;
+            margin-left: 1em;
+         }
+         .form .heading h1{
+            font-size: 1.8em;
+            margin-top: 0.5em;
+         }
+      }
+
+      @media screen and (min-width: 445px) and (max-width: 560px) {
+        .form{
+           height:54%;
+           width:63vw;
+        }
+        .form-section input{
+            width: 10em;
+            height: 1.5em;
+            position: relative;
+            right: 0.2em;
+            margin-top: 1.1em;
+            font-size: 0.9em;
+        }
+        .form-section label{
+            position: relative;
+            top: 2.3em;
+            left:-1.75em;
+        }
+        .btn input{
+            width:10em;
+            height: 24px;
+            margin-top: -0.5em;
+            margin-left: 0em;
+         }
+         .form .heading h1{
+            font-size: 1.5em;
+            margin-top: 1em;
+         }
+      }
+      @media screen and (min-width: 310px) and (max-width: 445px) {
+        .form{
+           height:58%;
+           width:65vw;
+        }
+        .form-section input{
+            width: 9em;
+            height: 1.5em;
+            position: relative;
+            right: -0.5em;
+            margin-top: 0.5em;
+            font-size: 0.8em;
+        }
+        .form-section label{
+            position: relative;
+            top: 1.8em;
+            left:-1.3em;
+        }
+        .btn input{
+            width:8em;
+            height: 24px;
+            margin-top: 3.5em;
+            margin-left: 0em;
+            font-size: 0.8em;
+         }
+         .form .heading h1{
+            font-size: 1.1em;
+            margin-top: 2em;
+            font-weight: bolder;
+         }
+      }
+
+      @media screen and (min-width: 230px) and (max-width: 310px) {
+        .form{
+           height:65%;
+           width:77vw;
+        }
+        .form-section input{
+            width: 7em;
+            height: 1.5em;
+            position: relative;
+            right: -0.1em;
+            margin-top: 1.5em;
+            font-size: 12px;
+        }
+        .form-section label{
+            position: relative;
+            top: 1.7em;
+            left: -1.5em;
+        }
+        .btn input{
+            width:9em;
+            height: 24px;
+            margin-top: 3em;
+            margin-left: 0.5em;
+            font-size: 0.5em;
+         }
+         .form .heading h1{
+            font-size: 1em;
+            margin-top: 2em;
+            font-weight: bolder;
+         }
+      }
+      @media screen and (min-width: 100px) and (max-width: 230px) {
+        .form{
+           height:51%;
+           width:77vw;
+        }
+        .form-section input{
+            width: 6em;
+            height: 1.5em;
+            position: relative;
+            right: -0.1em;
+            margin-top: 0.5em;
+            font-size: 10px;
+        }
+        .form-section label{
+            position: relative;
+            top: 1.7em;
+            left: -1.1em;
+        }
+        .btn input{
+            width:9em;
+            height: 24px;
+            margin-top: 6em;
+            margin-left: 0.5em;
+            font-size: 0.5em;
+         }
+         .form .heading h1{
+            font-size: 11px;
+            margin-top: 4em;
+            margin-left: 0.5em;
+            font-family: auto;
+         }
+      }
+    </style>
+</head>
+
+<body>
+
+    <div class="form">
+        <div class="heading">
+            <h1>Registration</h1>
+        </div>
+        <div class="form-section">
+
+            <form action="page.html" autocomplete="off" id="myForm">
+                <div class="section1">
+                    <label for="uname"><span><ion-icon name="person-outline"></ion-icon></span></label>
+                    <input type="text" name="name" id="uname" placeholder="Username"required>
+                </div>
+                <div class="section2">
+                    <label for="unumber"><span><ion-icon name="call-outline"></ion-icon></span></label>
+                    <input type="tel" name="number" id="unumber" placeholder="Contact Number"required>
+                </div>
+                <div class="section3">
+                    <label for="umail"><span><ion-icon name="mail-outline"></ion-icon></span></label>
+                    <input type="email" name="mail" id="umail" placeholder="Email-id"required>
+                </div>
+                <div class="section4">
+                    <label for="upass"><span><ion-icon name="lock-closed-outline"></ion-icon></span></label>
+                    <input type="password" name="pass" id="upass" placeholder="Password" required>
+                </div>
+
+                <div class="btn">
+                    <input type="submit" value="SUBMIT">
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
